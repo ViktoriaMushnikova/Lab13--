@@ -37,9 +37,19 @@ double CalculateScholarship(double baseAmount, double bonusPercent)
 {
     return baseAmount + baseAmount * bonusPercent / 100;
 }
-double result = CalculateScholarship(2000, 15);
-Console.WriteLine(result);
-
+bool IsEligibleForBonus(double averageGrade)
+{
+    return averageGrade >= 4.5;
+}
+double averageGrade = 4.1;
+if (IsEligibleForBonus(averageGrade))
+{
+    double scholarshipBonus = CalculateScholarship(2000, 15);
+    Console.WriteLine(scholarshipBonus);
+} else
+{
+    Console.WriteLine(2000);
+}
 
 Console.WriteLine("Шаг 4. Массив как параметр");
 
