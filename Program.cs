@@ -1,5 +1,7 @@
-﻿using System.Dynamic;
+﻿using System.ComponentModel;
+using System.Dynamic;
 
+/*
 Console.WriteLine("Шаг 1. Метод без параметров");
 
 PrintHeader();
@@ -78,3 +80,70 @@ int[] grades = { 4, 5, 3, 5, 4 };
 double average = CalculateAverageGrade(grades);
 int gradeFives = CountFives(grades);
 Console.WriteLine($"Средний балл: {average}, количество пятёрок: {gradeFives}");
+*/
+/*
+static void Main()
+    {
+        Console.WriteLine(Add(2, 3));
+        Console.WriteLine(Add(2.5, 3.5));
+        Console.WriteLine(Add(2, 3, 4));
+    }
+    static int Add(int a, int b)
+    {
+        return a + b;
+    }
+    static double Add(double a, double b)
+    {
+        return a + b;
+    }
+    static int Add(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+}
+*/
+
+Console.WriteLine("Задача А");
+
+void PrintDivider()
+{
+    Console.WriteLine("--");
+}
+Console.WriteLine("Строка разделитель 1");
+PrintDivider();
+Console.WriteLine("Строка разделитель 2");
+PrintDivider();
+Console.WriteLine("Строка разделитель 3");
+
+
+Console.WriteLine("Задача Б");
+
+void PrintPerson(string name1, int age1)
+{
+    Console.WriteLine($"Имя: {name1}, возраст: {age1}");
+}
+PrintPerson("Игорь", 13);
+PrintPerson("Ария", 19);
+
+Console.WriteLine("Вариант 1");
+void PrintSeparator()
+{
+    Console.WriteLine("--");
+}
+Console.WriteLine("Строка разделитель 1");
+PrintSeparator();
+Console.WriteLine("Строка разделитель 2");
+PrintSeparator();
+Console.WriteLine("Строка разделитель 3");
+PrintSeparator();
+Console.WriteLine("Конец");
+
+
+Console.WriteLine("Вариант 8");
+double CelsiusToFahrenHeit(double celsius)
+{
+    return celsius * 9.0 / 5.0 + 32;
+}
+double tempCelsius = 32.5;
+double tempFahrenHeit = CelsiusToFahrenHeit(tempCelsius);
+Console.WriteLine($"Температура в Цельсиях: {tempCelsius}, температура в Фаренгейтах: {tempFahrenHeit}");
